@@ -1,0 +1,39 @@
+{
+  "name": "automation-web-cypress",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --check \"cypress/**/*.js\"",
+    "prettier:fix": "prettier --write \"cypress/**/*.js\"",
+    "lint": "eslint \"cypress/**/*.js\"",
+    "lint:fix": "eslint \"cypress/**/*.js\" --fix",
+    "allure:clean-results": "rm -rf allure-results || rmdir /s /q allure-results",
+    "cy-run": "npm run allure:clean-results && (npx cypress run || true) && npm run prettier:fix && npm run lint:fix && npx allure serve",
+    "cy-open": "npm run allure:clean-results && npm run prettier:fix && npx cypress open"
+    
+  },
+  "keywords": [],
+  "author": "Alcimar Nascimento",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "allure-commandline": "^2.34.1",
+    "cypress": "^14.5.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@cypress/code-coverage": "^3.14.5",
+    "allure-cypress": "^3.3.2",
+    "babel-plugin-istanbul": "^7.0.0",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-cypress": "^5.1.0",
+    "eslint-plugin-prettier": "^5.5.1",
+    "globals": "^16.3.0",
+    "nyc": "^17.1.0",
+    "prettier": "^3.6.2"
+  }
+}

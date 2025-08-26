@@ -1,0 +1,15 @@
+export const locators = {
+  textBox: '#name',
+  radioButton: 'input[id="female"]',
+  checkBoxSunday: '#sunday',
+  checkBoxTuesday: '#tuesday',
+  checkBoxWednesday: '#wednesday',
+  checkBoxDays: '#post-body-1307673142697428135  > :nth-child(11) > div',
+  selectBoxCountry: '#country',
+  selectColor: '#colors',
+  selectColorRed: '#colors > option:nth-child(5)',
+  staticTable: '[name="BookTable"] tr',
+  tableTitle: '[name="BookTable"] th',
+  dinamicButtonStart: '[name="start"]',
+  dinamicButtonStop: '[name="stop"]',
+};
