@@ -20,7 +20,7 @@ Isso evita a repetição de código e torna os testes mais limpos e fáceis de l
 Você pode encontrar esses comandos em:
 
 ```
-cypress/support/commands/commands.js
+cypress/support/commands/acoes.js
 ```
 ### 📝 Nomeclatura Descritiva
 Os arquivos de teste (`.cy.js`) e os blocos `describe` e `it` são nomeados de forma clara e descritiva, permitindo entender o propósito de cada teste apenas lendo seu título.
