@@ -2,4 +2,4 @@
 // https://on.cypress.io/configuration
 // Import commands.js using ES2015 syntax:
 import 'allure-cypress';
-import './commands/commands';
+import './commands/acoes';

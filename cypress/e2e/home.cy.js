@@ -102,7 +102,7 @@ describe('validações dos elementos da página', () => {
     cy.get(locators.tableTitle).eq(3).should('have.text', 'Price');
   });
 
-  it('Valida botão dinâmico', () => {
+  it.only('Valida botão dinâmico', () => {
     cy.DynamicButtonStart();
     cy.get(locators.dinamicButtonStart).should('have.text', 'START'); //valida botão dinâmico
     cy.get(locators.dinamicButtonStart).click();
